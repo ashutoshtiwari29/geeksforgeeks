@@ -1,31 +1,31 @@
-# geeksforgeeks
+
 #User function Template for python3
 
-class Solution:
-    def oppositeFaceOfDice(self, N):
-        if N == 1:
-            return 6
-        elif N == 2:
-            return 5
-        elif N == 3:
-            return 4
-        elif N == 4:
-            return 3
-        elif N == 5:
-            return 2
-        else:
-            return 1
-        #code here 
+def game_with_number (arr, n) : 
+    a = []
+    # b = []
+    for i in range(0,n-1):
+        xor = arr[i] ^ arr[i+1]
+        a.append(xor)
+    c = arr[-1]
+    a.append(c)
+    
+    return a
+    #Complete the function
 
 #{ 
 #  Driver Code Starts
 #Initial Template for Python 3
 
-if __name__ == '__main__': 
-    t = int(input())
-    for _ in range(t):
-        N = int(input())
-        ob = Solution()
-        ans = ob.oppositeFaceOfDice(N)
-        print(ans)
+
+for _ in range(0,int(input())):
+    
+    n = int(input())
+    arr = list(map(int,input().strip().split()))
+    res = game_with_number(arr, n);
+    print(*res)
+
+
+
+
 # } Driver Code Ends
