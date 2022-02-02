@@ -1,3 +1,6 @@
+
+que: Given a positive integer n. Find the sum of product of x and y such that floor(n/x) = y .
+
 #User function Template for python3
 
 class Solution:
