@@ -1,3 +1,9 @@
+qu: each shop offers a different variety of chocolate. Midori starts from ith shop and goes ahead to each and every shop. 
+    But as there are too many shops Midori would like to know how many more shops he has to visit. 
+    You have been given L denoting number of bits required to represent N. You need to return the maximum number of shops he can visit.
+
+
+
 #User function Template for python3
 class Solution:
     def leftShops (self, i, L):
