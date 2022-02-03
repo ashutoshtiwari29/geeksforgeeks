@@ -1,0 +1,19 @@
+que: Geek created a random series and given a name geek-onacci series. 
+     Given four integers A, B, C, N. A, B, C represents the first three numbers of geek-onacci series.
+     Find the Nth number of the series. The nth number of geek-onacci series is a sum of the last three numbers 
+     (summation of N-1th, N-2th, and N-3th geek-onacci numbers)
+
+
+#code
+def geek(a, b, c, n):
+   if n == 4:
+       return a + b + c
+   
+   return geek(b, c, a + b + c, n - 1)
+
+   
+t = int(input())
+for _ in range(t):
+   a, b, c, n = map(int, input().split())
+   nx = geek(a, b, c, n)
+   print(nx)
