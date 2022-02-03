@@ -1,0 +1,9 @@
+que: Given a positive integer N, print count of set bits in it.
+
+
+
+class Solution:
+	def setBits(self, N):
+	     s = str(bin(N))
+         a = s.count('1')
+         return a
