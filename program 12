@@ -1,0 +1,19 @@
+que: Given a square matrix of size N*N, print the sum of upper and lower triangular elements. 
+     Upper Triangle consists of elements on the diagonal and above it. 
+     The lower triangle consists of elements on the diagonal and below it. 
+
+
+
+class Solution:
+    
+    #Function to return sum of upper and lower triangles of a matrix.
+    def sumTriangles(self,matrix, n):
+         upsum = 0
+         dsum = 0
+         for i in range(n):
+             for j in range(n):
+                 if i>=j:
+                     dsum+=matrix[i][j]
+                 if i<=j:
+                     upsum+=matrix[i][j]
+         return [upsum,dsum]
